@@ -132,8 +132,8 @@ header nav ul {
   position: relative;
   background: transparent;
   border: solid var(--accent) 2px;
-  width: 55px;
-  height: 30px;
+  width: 60px;
+  height: 32px;
   border-radius: 20px;
 }
 
@@ -147,10 +147,11 @@ header nav ul {
   left: 5px;
   transition: .3s ease;
   cursor: pointer;
+  transform-origin: center
 }
 
 .slider.right {
-  left: 25px;
+  left: 30px;
 }
 
 .home {
@@ -468,7 +469,7 @@ header nav ul {
 
 .card .tech-sec {
   display: flex;
-  gap: .5rem;
+  gap: .75rem;
 }
 
 .card .tech-sec img {

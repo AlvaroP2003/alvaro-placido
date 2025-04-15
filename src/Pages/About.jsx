@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import { useRef } from "react";
 
 const educationStages = [
-    { year: '2024 - 2025', title: 'Software Development',place:"Codespace Academy", image: 'src/assets/Images/education_codespace.png'},
-    { year: '2023', title: 'Information Technology', place: 'CTU Traning Solutions', image: 'src/assets/Images/education_ctu.png' },
-    { year: '2021', title: 'Matric Graduation', place:"Curro Nelspruit",image: 'src/assets/Images/education_curro.jpg' },
+    { year: '2024 - 2025', title: 'Software Development',place:"Codespace Academy", image: './Images/education_codespace.png'},
+    { year: '2023', title: 'Information Technology', place: 'CTU Traning Solutions', image: './Images/education_ctu.png' },
+    { year: '2021', title: 'Matric Graduation', place:"Curro Nelspruit",image: './Images/education_curro.jpg' },
   ];
 
 export default function About() {
@@ -65,7 +65,7 @@ export default function About() {
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <img src="src/assets/Images/WhatsApp Image 2025-04-09 at 12.22.57.jpeg"/>
+                    <img src="./Images/WhatsApp Image 2025-04-09 at 12.22.57.jpeg"/>
 
                 </div>
 
@@ -77,10 +77,9 @@ export default function About() {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto iure consequatur fugiat placeat aperiam veniam itaque amet? Debitis possimus dolor, nulla enim asperiores consequuntur voluptatem facere laboriosam officia sunt.</p>
 
                     <div className="contact-grid">
-                        <a href="#" className="cell">Email</a>
-                        <a href="#" className="cell">Discord</a>
-                        <a href="#" className="cell">GitHub</a>
-                        <a href="#" className="cell">LinkedIn</a>
+                        <a href="mailto:placido.alvaro03@gmail.com" className="cell">Email Me</a>
+                        <a href="https://github.com/AlvaroP2003" className="cell">GitHub</a>
+                        <a href="https://www.linkedin.com/in/alvaro-placido-226887206/" className="cell">LinkedIn</a>
                     </div>
                 </div>
            </div>
