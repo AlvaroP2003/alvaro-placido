@@ -1,0 +1,90 @@
+@media (max-width: 800px) {
+    header {
+        max-width: 90%;
+        height: 12vh;
+    }
+
+    header nav ul {
+        gap: 1rem;
+    }
+
+    .navlink {
+        font-size: .8rem;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    .home h1 {
+        font-size: 1.8rem;
+        letter-spacing: 10px;
+    }
+    .home h2 {
+        font-size: .75rem;
+        letter-spacing: 10px;
+    }
+    .home p {
+        font-size: .8rem;
+        max-width: 70%;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me .img-container img {
+        width: 90%;
+    }
+    .contact-grid .cell {
+        width: 100%;
+    }
+
+    .timeline-circle {
+        width: 70px;
+        height: 70px;
+    }
+    .timeline-line {
+        left: 34px;
+    }
+
+    .content-header h2{
+        font-size: 1rem;
+    }
+    .content-header h3 {
+        font-size: 1rem;
+    }
+
+    .stack-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .stack {
+        padding: 0;
+    }
+
+    .code-container > div {
+        background-color: var(--hover-color);
+    }
+
+    .projects-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 80%;
+        overflow-x: auto;
+        gap: 10px;
+        gap: 2rem;
+    }
+
+    .card {
+        min-width:325px;
+        height: 450px;
+    }
+
+  }
+
+  @media (max-width: 1300px) {
+    section {
+        max-width: 80%;
+    }
+  }
