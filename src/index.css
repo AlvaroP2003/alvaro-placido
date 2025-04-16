@@ -230,6 +230,7 @@ header nav ul {
   height: 90%;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 10px 10px 30px 1px var(--text-scnd);
 }
 
 .about-me .content {
@@ -316,7 +317,7 @@ header nav ul {
 
 .timeline-circle:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 12px var(--text-scnd);
 }
 
 .timeline-content {
