@@ -25,8 +25,7 @@
   --accent:#272727;
   --highlight:#333333;
   --text-color:#F5F5F5;
-  --text-scnd:#AFAFAF;
-  --text-scnd:#919191;
+  --text-scnd:#b9b9b9;
 }
 
 [data-theme='light'] {
@@ -77,12 +76,14 @@ h2 {
 h3 {
   font-family: 'Poppins Light';
   font-size: 1.1rem;
+  font-weight: normal;
 }
 
 p {
   font-family: 'Poppins Light';
   font-size: .9rem;
-  color:var(--text-scnd)
+  color:var(--text-scnd);
+  line-height: 2;
 }
 
 header {
@@ -163,29 +164,24 @@ header nav ul {
   height: 80vh;
 
   padding-top: 5rem;
-
-  gap: 2rem;
-
   max-width: 100%;
 }
 
 .home h1 {
-  font-size: 8rem;
-  letter-spacing: 50px;
-  margin: 0;
+  font-size: 9rem;
+  letter-spacing: 40px;
 }
 
 .home h2 {
-  font-size: 2rem;
-  letter-spacing: 30px;
-  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 20px;
 }
 
-.home p {
-  max-width: 50%;
-  text-align: center;
-
-  line-height: 2;
+.home h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-top: 3rem;
 }
 
 .action-btn {
@@ -200,6 +196,8 @@ header nav ul {
 
   transition: .3s ease;
   cursor: pointer;
+
+  margin-top: 3rem;
 }
 
 .action-btn:hover {

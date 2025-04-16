@@ -7,8 +7,7 @@ export default function Projects() {
     return (
         <section className="projects">
             <h1>Tech Stack</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolores labore officiis quis, eveniet blanditiis ab excepturi aperiam hic corrupti quo aliquid. Minima porro cumque aliquam cum eligendi iure autem.</p>
-
+            <p>Always learning new technologies and leveling up.</p>
             <div className="stack-container">
                 <div className="stack">
                     <h2>Frontend</h2>
@@ -46,9 +45,7 @@ export default function Projects() {
             </div>
             <div className="my-projects">
                 <h1>My Projects</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates rem blanditiis quod pariatur tenetur at? Fugit autem quod natus obcaecati eligendi molestias maxime iure, quasi magnam veritatis et magni accusamus.
-                Nihil, minima! Aut dolor et magnam, ab consequatur nesciunt nostrum iste maiores modi quis ratione! Eius doloremque vero repellat provident rem, sequi distinctio harum facere quam atque nam dicta cupiditate.</p>
-
+                <p>Here’s a collection of some of the projects I’ve built, blending creativity, functionality, and clean code. Each project has challenged me to learn, problem-solve, and push my skills further — and I’m proud to share them with you.</p>
                 <div className="projects-container">
                     
                     {

@@ -46,7 +46,7 @@ export default function About() {
             observer.disconnect();
             }
         },
-        { threshold: 1.0}
+        { threshold: .4}
         );
 
         if (timelineRef.current) observer.observe(timelineRef.current);
@@ -71,10 +71,9 @@ export default function About() {
 
                 <div className="content">
                     <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus suscipit pariatur recusandae veniam consequatur nesciunt quia amet molestias porro libero dolor tempore magnam cupiditate, at in blanditiis? Dolor, esse repudiandae.
-                    Perferendis, aut? Quasi, facilis! Tempore, ipsam in? Exercitationem, quaerat. Temporibus facilis tempore ut, et nobis delectus necessitatibus voluptates earum obcaecati eos ipsam explicabo commodi in harum animi consequuntur consectetur dicta?</p>
+                    <p>I’m a passionate developer blending creativity and functionality to build bold, beautiful, and meaningful digital experiences. I believe great design lives at the intersection of art and logic — and that's where I love to work. Whether it's a simple landing page or a dynamic web app, my mission is to craft work that feels alive, intuitive, and memorable.</p>
                     <h2>Get In Touch</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto iure consequatur fugiat placeat aperiam veniam itaque amet? Debitis possimus dolor, nulla enim asperiores consequuntur voluptatem facere laboriosam officia sunt.</p>
+                    <p>Feel free to reach out on any of my social platforms — my virtual doors are always open.</p>
 
                     <div className="contact-grid">
                         <a href="mailto:placido.alvaro03@gmail.com" className="cell">Email Me</a>
@@ -85,8 +84,7 @@ export default function About() {
            </div>
            <div className="education">
                 <h1>Education</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium adipisci officia minus. Mollitia unde fuga excepturi, nihil dolorem pariatur ducimus, assumenda, tempora id deserunt obcaecati! Quam mollitia rem doloribus aut.
-                Eum earum, reiciendis sit vel consequatur mollitia, laudantium debitis ipsum officiis ipsam libero. Optio dolorem est voluptate facere totam eius quisquam animi inventore dolore numquam soluta officiis recusandae, illum aliquam.</p>
+                <p>I believe that learning never stops — it’s a continuous journey that shapes who we are and how we create. My education has laid a strong foundation not only in creative and technical skills but also in critical thinking, problem-solving, and the ability to adapt in a fast-changing digital world. Every project I take on is built upon the knowledge I’ve gained and the curiosity that drives me to keep exploring, experimenting, and growing as a developer and creator.</p>
                 <div className='timeline-wrapper' ref={timelineRef}>
                     <div className={`timeline-line ${visible ? 'show' : ''}`}/>
                     {educationStages.map((stage, index) => (
