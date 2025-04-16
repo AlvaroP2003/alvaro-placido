@@ -8,9 +8,9 @@ export default function MainLayout() {
         if(saved) {
             setTheme(saved)
         } else {
-            setTheme('dark')
+            setTheme('theme')
         }
-      })
+      },[])
     
       const [theme, setTheme] = useState();
     
