@@ -2,21 +2,15 @@ import {React,useState, useEffect} from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 export default function MainLayout() {
-
+    const [theme, setTheme] = useState(() => {
+        return localStorage.getItem('theme') || 'dark'
+    })
+    
       useEffect(() => {
-        const saved = localStorage.getItem('theme')
-        if(saved) {
-            setTheme(saved)
-        } else {
-            setTheme('theme')
+        if(theme) {
+            document.documentElement.setAttribute('data-theme', theme)
+            localStorage.setItem('theme', theme)
         }
-      },[])
-    
-      const [theme, setTheme] = useState();
-    
-      useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
       }, [theme]);
     
       const toggleTheme = () => {

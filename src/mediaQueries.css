@@ -16,17 +16,22 @@
         max-width: 90%;
     }
 
+    .toggle {
+        transform: scale(0.8);
+    }
+
     .home h1 {
         font-size: 1.8rem;
         letter-spacing: 10px;
     }
     .home h2 {
-        font-size: .75rem;
+        font-size: .8rem;
         letter-spacing: 10px;
     }
-    .home p {
-        font-size: .8rem;
+    .home h3 {
+        font-size: .75rem;
         max-width: 70%;
+        text-align: center;
     }
 
     .about-me {

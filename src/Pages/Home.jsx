@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Home() {
+    localStorage.clear()
     return (
         <section className="home">
             <h1>ALVARO PLACIDO</h1>
