@@ -20,6 +20,11 @@
         transform: scale(0.8);
     }
 
+    .home {
+        margin-top: 0;
+        justify-content: center;
+    }
+
     .home h1 {
         font-size: 1.8rem;
         letter-spacing: 10px;

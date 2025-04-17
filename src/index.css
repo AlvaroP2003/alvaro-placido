@@ -162,9 +162,8 @@ header nav ul {
   flex-direction: column;
   align-items: center;
   height: 80vh;
-
-  padding-top: 5rem;
   max-width: 100%;
+  margin-top: 5rem;
 }
 
 .home h1 {
@@ -449,9 +448,10 @@ header nav ul {
 .card .media-container {
   position: relative;
   width: 100%;
-  min-height: 50%;
   border-radius: 15px;
   overflow: hidden;
+  flex: 1;
+  min-height: 50%;
 }
 
 .card .media-container .thumbnail {
