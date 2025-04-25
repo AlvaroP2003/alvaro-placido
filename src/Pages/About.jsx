@@ -65,7 +65,7 @@ export default function About() {
                     onMouseMove={handleMouseMove}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <img src="./Images/WhatsApp Image 2025-04-09 at 12.22.57.jpeg"/>
+                    <img src="./Images/about-me.webp"/>
 
                 </div>
 
