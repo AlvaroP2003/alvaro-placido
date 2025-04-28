@@ -1,6 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const educationStages = [
     { year: '2024 - 2025', title: 'Software Development',place:"Codespace Academy", image: './Images/education_codespace.png'},
@@ -9,32 +8,39 @@ const educationStages = [
   ];
 
 export default function About() {
-    const [tiltStyle, setTiltStyle] = useState({});
 
-    const handleMouseMove = (e) => {
-        const image = e.target;
-        const { width, height, left, top } = image.getBoundingClientRect();
-        const offsetX = e.clientX - left;
-        const offsetY = e.clientY - top;
-        const centerX = width / 2;
-        const centerY = height / 2;
+    // Image Tilt Logic
+    const imgRef = useRef(null); // create a reference
 
-        const tiltX = ((offsetY - centerY) / centerY) * 15; // Adjust 5 for more/less tilt
-        const tiltY = ((offsetX - centerX) / centerX) * -15; // Adjust -5 for more/less tilt
+    useEffect(() => {
+      const img = imgRef.current; // get the element
+  
+      function rotateElement(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+  
+        const middleX = window.innerWidth / 2;
+        const middleY = window.innerHeight / 2;
+  
+        const offsetX = ((x - middleX) / middleX) * 25;
+        const offsetY = ((y - middleY) / middleY) * 25;
+  
+        img.style.setProperty('--rotateX', -1 * offsetY + 'deg');
+        img.style.setProperty('--rotateY', offsetX + 'deg');
+      }
+  
+      document.addEventListener('mousemove', rotateElement);
+  
+      return () => {
+        document.removeEventListener('mousemove', rotateElement); // clean up when component unmounts
+      };
+    }, []);
 
-        setTiltStyle({
-        transform: `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`,
-        });
-    };
 
-    const handleMouseLeave = () => {
-        setTiltStyle({
-        transform: 'rotateX(0deg) rotateY(0deg)',
-        });
-    };
-
-
-    //Timeline Logic
+ 
+  
+    
+    // Timeline Animtion Logic
     const timelineRef = useRef(null);
     const [visible, setVisible] = useState(false);
 
@@ -58,16 +64,8 @@ export default function About() {
     return (
         <section className="about">
            <div className="about-me">
-                <div
-                    className="img-container"
-                    alt="Tilt Effect"
-                    style={tiltStyle}
-                    onMouseMove={handleMouseMove}
-                    onMouseLeave={handleMouseLeave}
-                >
-                    <img src="./Images/about-me.webp"/>
-
-                </div>
+            
+                <img src="./Images/about-me.webp" ref={imgRef}/>
 
                 <div className="content">
                     <h1>About Me</h1>
@@ -81,7 +79,9 @@ export default function About() {
                         <a href="https://www.linkedin.com/in/alvaro-placido-226887206/" className="cell">LinkedIn</a>
                     </div>
                 </div>
+
            </div>
+
            <div className="education">
                 <h1>Education</h1>
                 <p>I believe that learning never stops — it’s a continuous journey that shapes who we are and how we create. My education has laid a strong foundation not only in creative and technical skills but also in critical thinking, problem-solving, and the ability to adapt in a fast-changing digital world. Every project I take on is built upon the knowledge I’ve gained and the curiosity that drives me to keep exploring, experimenting, and growing as a developer and creator.</p>

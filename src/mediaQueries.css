@@ -48,8 +48,12 @@
     .about-me {
         flex-direction: column;
     }
-    .about-me .img-container img {
-        width: 90%;
+    .about-me img {
+        width: 100%;
+    }
+
+    .about-me .content {
+        padding: 0;
     }
     .contact-grid .cell {
         width: 100%;
@@ -95,6 +99,7 @@
     .projects-container a {
         height: fit-content;
     }
+
 
     .card {
         min-width:300px;

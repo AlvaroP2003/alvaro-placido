@@ -214,24 +214,25 @@ header nav ul {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.about-me .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex:1;
-  transition: .3s;
-}
-
-.about-me .img-container img {
-  width: 90%;
-  height: 90%;
+.about-me img {
+  flex: 1;
+  height: 500px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 10px 10px 30px 1px var(--text-scnd);
+  box-shadow: 5px 5px 30px 1px var(--text-scnd);
+
+
+  transform-style: preserve-3d ;
+  transform: 
+    perspective(5000px)
+    rotateX(var(--rotateX))
+    rotateY(var(--rotateY))
+  ;
 }
+
 
 .about-me .content {
   display: flex;
@@ -451,7 +452,6 @@ header nav ul {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
-  flex: 1;
   min-height: 50%;
 }
 
