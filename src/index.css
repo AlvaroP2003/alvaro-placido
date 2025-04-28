@@ -7,16 +7,19 @@
 @font-face {
   font-family:'Poppins Bold';
   src: url(assets/Fonts/Poppins-Bold.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family:'Poppins Medium';
   src: url(assets/Fonts/Poppins-Medium.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family:'Poppins Light';
   src: url(assets/Fonts/Poppins-Light.ttf) format('truetype');
+  font-display: swap;
 }
 
 :root {
@@ -220,6 +223,7 @@ header nav ul {
 .about-me img {
   flex: 1;
   height: 500px;
+  width: 400px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 5px 5px 30px 1px var(--text-scnd);
