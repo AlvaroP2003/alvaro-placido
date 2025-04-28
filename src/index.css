@@ -179,6 +179,7 @@ header nav ul {
 .home h1 {
   font-size: 9rem;
   letter-spacing: 40px;
+  white-space: nowrap;
 }
 
 .home h2 {
