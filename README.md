@@ -37,4 +37,9 @@ The goal is to create a visually engaging and interactive experience that feels 
 - Light and clean code structure
 
 ---
+## Let's get Started ⚡
 
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/your-portfolio.git
