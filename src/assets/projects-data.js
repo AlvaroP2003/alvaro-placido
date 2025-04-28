@@ -2,7 +2,7 @@ const projectsData = [
     {
         name : "Farmer's Market Langing Page",
         description : 'A clean, responsive landing page for a local farmers market, featuring a natural, earthy aesthetic.',
-        thumbnail : 'public/Images/projects_rorbinah-01.webp',
+        thumbnail : '/Images/projects_rorbinah-01.webp',
         video : './Videos/projects_rorbinah.mkv',
         link : 'https://rorbinah.netlify.app',
         tech : [

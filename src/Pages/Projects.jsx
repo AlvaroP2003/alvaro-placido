@@ -78,7 +78,6 @@ export default function Projects() {
                                     <img src={project.thumbnail} className="thumbnail"/>
                                     <video
                                         src={project.video}
-                                        autoPlay
                                         muted
                                         playsInline
                                         preload="metadata"
