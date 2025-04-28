@@ -7,7 +7,7 @@
 @font-face {
   font-family:'Poppins';
   src: url(assets/Fonts/Poppins-Bold.ttf) format('truetype');
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -23,7 +23,7 @@
 @font-face {
   font-family:'Poppins';
   src: url(assets/Fonts/Poppins-Light.ttf) format('truetype');
-  font-weight: 700;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -55,7 +55,7 @@ body {
 section {
   max-width: 50%;
   margin: auto;
-  animation: intro 2s;
+  animation: intro 1.5s;
 }
 
 @keyframes intro {
