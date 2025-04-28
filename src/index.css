@@ -255,7 +255,7 @@ header nav ul {
   text-decoration: none;
   font-family: 'Poppins Light';
   background-color: var(--scnd-bg);
-  width: 250px;
+  width: 200px;
   padding: 1rem;
   border-radius: 10px;
   border: solid var(--accent) 1px;
