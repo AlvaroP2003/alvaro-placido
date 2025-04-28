@@ -5,20 +5,26 @@
 }
 
 @font-face {
-  font-family:'Poppins Bold';
+  font-family:'Poppins';
   src: url(assets/Fonts/Poppins-Bold.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family:'Poppins Medium';
+  font-family:'Poppins';
   src: url(assets/Fonts/Poppins-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family:'Poppins Light';
+  font-family:'Poppins';
   src: url(assets/Fonts/Poppins-Light.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -49,7 +55,7 @@ body {
 section {
   max-width: 50%;
   margin: auto;
-  animation: intro 1s;
+  animation: intro 2s;
 }
 
 @keyframes intro {
@@ -65,21 +71,21 @@ section {
 }
 
 h1 {
-  font-family: 'Poppins Bold';
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  font-weight: normal;
+  font-weight: 1000;
 }
 
 h2 {
-  font-family: 'Poppins Medium';
+  font-family: 'Poppins',sans-serif;
   font-size: 1.25rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 h3 {
-  font-family: 'Poppins Light';
+  font-family: 'Poppins',sans-serif;
   font-size: 1.1rem;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 p {
@@ -182,7 +188,6 @@ header nav ul {
 
 .home h3 {
   font-size: 1rem;
-  font-weight: normal;
   letter-spacing: 5px;
   margin-top: 3rem;
 }
