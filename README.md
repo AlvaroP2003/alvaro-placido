@@ -43,3 +43,13 @@ The goal is to create a visually engaging and interactive experience that feels 
 
 ```bash
 git clone https://github.com/yourusername/your-portfolio.git
+
+### 2. Install Dependancies
+
+```bash
+npm install
+
+### 3. Start The Development Server
+
+```bash
+npm run dev
