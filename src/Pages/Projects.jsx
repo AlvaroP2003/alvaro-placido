@@ -58,6 +58,7 @@ export default function Projects() {
                                     if(video) {
                                         hoverTimeout.current = setTimeout(() => {
                                             video.currentTime = 0
+                                            video.style.display = 'block'
                                             video.play()
                                             img.style.display = 'none'
                                         }, 3000)
@@ -71,12 +72,14 @@ export default function Projects() {
                                         clearTimeout(hoverTimeout.current)
                                         video.pause()
                                         img.style.display = 'block'
+                                        video.style.display = 'none'
                                     }
                                 }}
                             >
                                 <div className="media-container">
                                     <img src={project.thumbnail} className="thumbnail"/>
                                     <video
+                                        style={{display:'none'}}
                                         src={project.video}
                                         muted
                                         playsInline
