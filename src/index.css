@@ -29,29 +29,44 @@
 }
 
 :root {
-  --main-bg:#141414;
-  --scnd-bg:#272727;
-  --accent:#272727;
-  --highlight:#333333;
-  --text-color:#F5F5F5;
-  --text-scnd:#b9b9b9;
+  --main-grad: linear-gradient(-45deg, #1a1a1a, #141414, #272727, #b9b9b9);
+  --main-bg: #141414;
+  --scnd-bg: #272727;
+  --accent: #272727;
+  --highlight: #333333;
+  --text-color: #F5F5F5;
+  --text-scnd: #b9b9b9;
 }
 
 [data-theme='light'] {
-  --main-bg:'#F5F5F5';
-  --scnd-bg:'#F5F5F5';
-  --highlight:#f3f3f3;
-  --accent:#272727;
-  --text-color:#353535;
-  --text-scnd:#333333;
+  --main-grad: linear-gradient(-45deg, #ffffff, #f3f3f3, #e0e0e0, #333333);
+  --main-bg: #F5F5F5;
+  --scnd-bg: #F5F5F5;
+  --highlight: #f3f3f3;
+  --accent: #272727;
+  --text-color: #353535;
+  --text-scnd: #333333;
 }
 
 body {
-  background-color: var(--main-bg);
+  background: var(--main-grad);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease-in-out infinite;
   color: var(--text-color);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 section {
   max-width: 50%;
   margin: auto;
@@ -178,7 +193,7 @@ header nav ul {
 
 .home h1 {
   font-size: 9rem;
-  letter-spacing: 40px;
+  letter-spacing: 25px;
   white-space: nowrap;
 }
 
