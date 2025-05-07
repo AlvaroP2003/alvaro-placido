@@ -1,5 +1,6 @@
 import {React,useState, useEffect} from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import {Outlet}  from "react-router-dom";
+import Header from "../Components/Header";
 
 export default function MainLayout() {
     const [theme, setTheme] = useState(() => {
@@ -19,18 +20,7 @@ export default function MainLayout() {
 
     return (
         <>
-            <header>
-                <nav>
-                    <ul>
-                        <NavLink to='/' className={({ isActive }) => isActive ? 'navlink active' : 'navlink'}>HOME</NavLink>
-                        <NavLink to='/about' className={({ isActive }) => isActive ? 'navlink active' : 'navlink'}>ABOUT</NavLink>
-                        <NavLink to='/projects' className={({ isActive }) => isActive ? 'navlink active' : 'navlink'}>PROJECTS</NavLink>
-                    </ul>
-                </nav>
-                <button onClick={toggleTheme} className='toggle'>
-                <div className={`slider ${theme === 'dark' ? 'right' : ''}`}></div>
-                </button>
-            </header>
+           <Header/>
             <Outlet/>
         </>
     )

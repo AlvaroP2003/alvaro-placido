@@ -154,10 +154,8 @@ header nav ul:hover .navlink {
   transition: .3s;
 }
 
-.navlink.active {
-  background-color: var(--scnd-bg);
-  padding: .5rem 1rem;
-  border-radius: 10px;
+.navlink.active::after {
+  width: 100%;
 }
 
 header nav ul:hover .navlink:hover{
