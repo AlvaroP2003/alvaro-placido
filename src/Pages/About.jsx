@@ -63,7 +63,7 @@ export default function About() {
     
     return (
         <section className="about">
-           <div className="about-me">
+           <div className="about-me" id="about-me">
             
                 <img src="./Images/about-me.webp" ref={imgRef}/>
 
@@ -82,7 +82,7 @@ export default function About() {
 
            </div>
 
-           <div className="education">
+           <div className="education" id="education">
                 <h1>Education</h1>
                 <p>I believe that learning never stops — it’s a continuous journey that shapes who we are and how we create. My education has laid a strong foundation not only in creative and technical skills but also in critical thinking, problem-solving, and the ability to adapt in a fast-changing digital world. Every project I take on is built upon the knowledge I’ve gained and the curiosity that drives me to keep exploring, experimenting, and growing as a developer and creator.</p>
                 <div className='timeline-wrapper' ref={timelineRef}>

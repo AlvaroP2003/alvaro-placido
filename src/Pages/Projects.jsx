@@ -8,7 +8,7 @@ export default function Projects() {
         <section className="projects">
             <h1>Tech Stack</h1>
             <p>Always learning new technologies and leveling up.</p>
-            <div className="stack-container">
+            <div className="stack-container" id="tech-stack">
                 <div className="stack">
                     <h2>Frontend</h2>
                     <div className="code-container">
@@ -43,7 +43,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-            <div className="my-projects">
+            <div className="my-projects" id="my-projects">
                 <h1>My Projects</h1>
                 <p>Here’s a collection of some of the projects I’ve built, blending creativity, functionality, and clean code. Each project has challenged me to learn, problem-solve, and push my skills further — and I’m proud to share them with you.</p>
                 <div className="projects-container">
