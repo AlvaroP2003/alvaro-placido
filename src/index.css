@@ -43,7 +43,7 @@
   --main-bg: #F5F5F5;
   --scnd-bg: #F5F5F5;
   --highlight: #f3f3f3;
-  --accent: #272727;
+  --accent: #c9c8c8;
   --text-color: #353535;
   --text-scnd: #333333;
 }
@@ -128,6 +128,11 @@ header nav ul {
   width: 50%;
 }
 
+header nav ul:hover .navlink {
+  filter: blur(1px);
+  opacity: 0.5;
+}
+
 .navlink {
   position: relative;
   color: var(--text-color);
@@ -149,14 +154,21 @@ header nav ul {
   transition: .3s;
 }
 
-.navlink.active::after {
-  width: 100%;
+.navlink.active {
+  background-color: var(--scnd-bg);
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+header nav ul:hover .navlink:hover{
+  filter: none;
+  opacity: 1;
 }
 
 .toggle {
   position: relative;
   background: transparent;
-  border: solid var(--accent) 2px;
+  border: solid var(--text-scnd) 2px;
   width: 60px;
   height: 32px;
   border-radius: 20px;
@@ -178,6 +190,8 @@ header nav ul {
 .slider.right {
   left: 30px;
 }
+
+/* Home Page */
 
 .home {
   font-family:'Poppins Light';
@@ -222,6 +236,11 @@ header nav ul {
   cursor: pointer;
 
   margin-top: 3rem;
+
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+
 }
 
 .action-btn:hover {
@@ -247,7 +266,11 @@ header nav ul {
   width: 400px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 5px 5px 30px 1px var(--text-scnd);
+  box-shadow: 
+    0 2px 5px rgba(255, 255, 255, 0.05),
+    0 4px 10px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.08);
+
 
 
   transform-style: preserve-3d ;
@@ -280,8 +303,8 @@ header nav ul {
   text-decoration: none;
   font-family: 'Poppins Light';
   background-color: var(--scnd-bg);
-  width: 200px;
-  padding: 1rem;
+  width: 180px;
+  padding: .76rem 1rem;
   border-radius: 10px;
   border: solid var(--accent) 1px;
 
@@ -290,6 +313,11 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  box-shadow:
+  0 2px 4px rgba(0, 0, 0, 0.05),
+  0 8px 16px rgba(0, 0, 0, 0.08);
+
 }
 
 .contact-grid .cell svg {
@@ -396,7 +424,7 @@ header nav ul {
 }
 
 .projects {
-
+  padding-bottom: 3rem;
 }
 
 .stack-container {
@@ -436,6 +464,10 @@ header nav ul {
   gap: 1rem;
 
   font-family: 'Poppins Light';
+
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .code-container > div:hover {
