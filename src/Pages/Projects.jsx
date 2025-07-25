@@ -13,8 +13,10 @@ export default function Projects() {
                     <h2>Frontend</h2>
                     <div className="code-container">
                         <div style={{'--hover-color':'#61DAFB'}}>React JS</div>
+                        <div style={{'--hover-color':'#61DAFB'}}>React Native</div>
+                        <div style={{'--hover-color':'#ffffff','--text-color':'#000'}}>Next.js</div>
                         <div style={{'--hover-color':'#38BDF8'}}>Tailwind CSS</div>
-                        <div style={{'--hover-color':'#F7DF1E', '--text-color' : '#000'}}>Javascript</div>
+                        <div style={{'--hover-color':'#F7DF1E','--text-color' : '#000'}}>Javascript</div>
                         <div style={{'--hover-color':'#3178C6'}}>Typescript</div>
                         <div style={{'--hover-color':'#E34F26'}}>HTML</div>
                         <div style={{'--hover-color':'#1572B6'}}>CSS</div>
@@ -22,9 +24,10 @@ export default function Projects() {
                 </div>
 
                 <div className="stack">
-                    <h2>State Management</h2>
+                    <h2>Backend</h2>
                     <div className="code-container">
-                        <div style={{'--hover-color':'#764ABC'}}>Redux</div>
+                        <div style={{'--hover-color':'#336791'}}>Postgres SQL</div>
+                        <div style={{'--hover-color':'#3ECF8E'}}>Supabase</div>
                     </div>
                 </div>
 
@@ -32,14 +35,17 @@ export default function Projects() {
                     <h2>Build & Deployment</h2>
                     <div className="code-container">
                         <div style={{'--hover-color':'#646CFF'}}>Vite</div>
+                        <div style={{'--hover-color':'#000000','--text-color':'#fff'}}>Vercel</div>
                         <div style={{'--hover-color':'#00C7B7'}}>Netlify</div>
                     </div>
                 </div>
 
                 <div className="stack">
-                    <h2>Version Control</h2>
+                    <h2>Tools</h2>
                     <div className="code-container">
+                        <div style={{'--hover-color':'#000020','--text-color':'#fff'}}>Expo</div>
                         <div style={{'--hover-color':'#F05032'}}>Git</div>
+                        <div style={{'--hover-color':'#181717','--text-color':'#fff'}}>GitHub</div>
                     </div>
                 </div>
             </div>
